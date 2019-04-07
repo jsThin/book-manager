@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    background-color: lightgreen;
+}
+.content h2 {
+    line-height: 50px;
+}
+.content input {
+    line-height: 36px;
+    margin: 5px;
+}
+.content .btn {
+    padding: 2px 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: lightblue;
+}

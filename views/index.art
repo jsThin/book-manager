@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="title">图书管理系统1.0.0-林宏杰</div>
+    <table>
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>名称</th>
+                <th>作者</th>
+                <th>分类</th>
+                <th>概要</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{each list}}
+                <tr>
+                    <td>{{$value.id}}</td>
+                    <td>{{$value.name}}</td>
+                    <td>{{$value.author}}</td>
+                    <td>{{$value.classify}}</td>
+                    <td>{{$value.desc}}</td>
+                    <td>
+                        <a href="/toEditBook?id={{$value.id}}">编辑</a>
+                        <a href="/delBook?id={{$value.id}}">删除</a>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div class="add">
+        <a href="/toAddBook">添加图书</a>
+    </div>
+</body>
+</html>

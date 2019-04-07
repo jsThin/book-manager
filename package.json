@@ -1,0 +1,25 @@
+{
+  "name": "book-manager",
+  "version": "1.0.0",
+  "description": "node+express开发图书管理项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linhnogjie/book-manager.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "linhongjie",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-art-template": "^1.0.1"
+  }
+}
